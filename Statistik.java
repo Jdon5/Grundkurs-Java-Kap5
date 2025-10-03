@@ -6,24 +6,24 @@ public class Statistik {
         double mittelwert = 0;
 
         // Programm zur Ermittlung des kleinsten Wertes eines int-Arrays
-        for(int i=0;i<numArr.length;i++){
-            if(kleinsterWert>numArr[i]){
-                kleinsterWert= numArr[i];
+        for (int j : numArr) {
+            if (kleinsterWert > j) {
+                kleinsterWert = j;
             }
         }
         System.out.println("Kleinster Wert des Arrays: "+kleinsterWert);
 
         //Programm zur Ermittlung des größten Wertes eines int-Arrays
-        for(int i=0;i<numArr.length;i++){
-            if(groessterWert<numArr[i]){
-                groessterWert=numArr[i];
+        for (int j : numArr) {
+            if (groessterWert < j) {
+                groessterWert = j;
             }
         }
         System.out.println("Größter Wert des Arrays: "+ groessterWert);
 
         //Programm zur Ermittlung des Mittelwerts eines Arrays
-        for(int i=0;i<numArr.length;i++){
-            mittelwert+=numArr[i];
+        for (int j : numArr) {
+            mittelwert += j;
         }
         System.out.println("Mittelwert: "+mittelwert/numArr.length);
 
