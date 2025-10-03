@@ -16,6 +16,7 @@ public class Multiplikation {
         }
 
         //Ausgabe von A
+        System.out.println("A: ");
         for (double[] i: A) {
             for(double j: i){
                 System.out.print(j+"\t");
@@ -32,6 +33,7 @@ public class Multiplikation {
         }
 
         //Ausgabe von B mit Zahlen
+        System.out.println("B: ");
         for (double[] i: B) {
             for(double j: i){
                 System.out.print(j+"\t");
@@ -40,7 +42,7 @@ public class Multiplikation {
         }
 
         double[][] C = new double[l][n];
-
+        //Matrixmultiplikation
         for(int i=0;i<A.length;i++){
             for (int j=0;j<B[0].length;j++){
                 C[i][j] =0;
@@ -51,6 +53,8 @@ public class Multiplikation {
         }
         System.out.println();
 
+        //Ausgabe von C
+        System.out.println("C: ");
         for(double[] i: C){
             for(double j:i){
                 System.out.print(j+"\t");
